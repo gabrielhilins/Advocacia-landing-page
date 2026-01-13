@@ -1,6 +1,7 @@
 "use client";
 
 import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+import { DevelopedBy } from "./developed-by";
 import Link from "next/link";
 
 export function Footer() {
@@ -84,21 +85,7 @@ export function Footer() {
             direitos reservados.
           </p>
 
-          <div className="flex justify-center items-center gap-2 text-[10px] tracking-[0.15em] uppercase font-[family-name:var(--font-quicksand)] text-white">
-            <span className="italic text-white/40">desenvolvido por</span>
-            <a
-              href="https://ggabstechdesign.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center"
-            >
-              <img
-                src="/Wordmark SVG.svg"
-                alt="GGABS"
-                className="h-5 w-auto transition-transform duration-300 ease-out group-hover:-translate-y-1"
-              />
-            </a>
-          </div>
+          <DevelopedBy />
         </div>
       </div>
     </footer>
