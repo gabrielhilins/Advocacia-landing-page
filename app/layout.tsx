@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter, Cinzel, Quicksand} from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import LenisProvider from "@/components/LenisProvider" // Changed to default import
 
 const inter = Inter({
   subsets: ["latin"],
@@ -55,7 +56,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.variable} ${cinzel.variable} font-sans antialiased`}>
-        {children}
+        <LenisProvider> {/* Wrap children with LenisProvider */}
+          {children}
+        </LenisProvider>
         <Analytics />
       </body>
     </html>

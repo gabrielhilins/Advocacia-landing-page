@@ -130,3 +130,22 @@
     scroll-behavior: smooth;
   }
 }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a059; /* Gold color for the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Optional: Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #a68549; /* Slightly darker gold on hover */
+}
